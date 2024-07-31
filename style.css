@@ -1,0 +1,110 @@
+*{
+   /* margin: 0px;
+    padding: 0px;*/
+    background-color: rgb(236, 239, 241);
+}
+header{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+header h1{
+    text-align: center;
+    text-decoration:underline;
+    margin: 20px;
+}
+.Pcenter{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar {
+    width: 200px;
+    background-color: #dadbeb;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    border: 2px solid rgb(67, 67, 129);
+    margin-bottom: 50px;
+    
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #4588bec9;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #4e86c5;
+    color: white;
+  }
+
+.content #Skl:target {  
+    display: block;  
+} 
+#Pro:target {  
+  display: block;  
+}  
+ #Edu:target {  
+  display: block;  
+}  
+ #About:target {  
+  display: block;  
+} 
+  @media screen and (min-width: 700px) {
+  div.content {
+    margin-left: 200px;
+    padding: 10px 16px;
+    height: auto;
+    border: 2px dashed #4e86c5;
+    margin: 20px;
+    margin-top: 100px;
+    margin-left: 302px;
+    margin-right: 100px;
+  }
+}
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {
+      margin : 100px;
+      margin-top: 50px;
+      padding: 10px 16px;
+      height: auto;
+      border: 2px dashed #4e86c5;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+    div.content {
+      margin-left: 100;
+      margin : 0;
+      margin-top: 50px;
+      padding: 10px 10px;
+      height: auto;
+      border: 2px dashed #4e86c5;
+    }
+  }
+  .BOLD{
+    font-weight: bold;
+  }
+  .underlined{
+    text-decoration: underline;
+  }
+  .italic{
+    font-style: italic;
+  }
